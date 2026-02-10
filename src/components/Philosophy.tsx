@@ -1,7 +1,10 @@
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Philosophy = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -77,6 +80,22 @@ const Philosophy = () => {
                           {text}
                       </motion.span>
                     ))}
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <motion.button 
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate('/analise-cobertura')}
+                    className="bg-[#dcb13c] text-black px-12 py-4 rounded-full text-xs font-bold tracking-[0.2em] hover:bg-[#cda22b] transition-colors uppercase cursor-pointer"
+                  >
+                    Quero criar minha conta!
+                  </motion.button>
                 </motion.div>
 
             </div>

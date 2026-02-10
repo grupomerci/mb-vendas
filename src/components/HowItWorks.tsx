@@ -3,53 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const HowItWorks = () => {
   const navigate = useNavigate();
-  const steps = [
-    {
-      number: "1",
-      title: "Seu Perfil",
-      description: "Você conta quem você é, como vive e o que espera do seu estilo."
-    },
-    {
-      number: "2",
-      title: "Sua Curadora",
-      description: "Uma especialista analisa seu perfil e começa a desenhar sua identidade visual."
-    },
-    {
-      number: "3",
-      title: "Mapa de Estilo",
-      description: "Vocês alinham referências, objetivos e preferências."
-    },
-    {
-      number: "4",
-      title: "Sua Seleção",
-      description: "Criamos combinações que funcionam entre si e com você."
-    },
-    {
-      number: "5",
-      title: "O Ritual",
-      description: "Você prova tudo com calma, no seu tempo."
-    },
-    {
-      number: "6",
-      title: "O que fica",
-      description: "Você paga apenas pelo que amar. O resto, a gente busca."
-    }
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-  };
 
   return (
     <section id="como-funciona" className="py-18 px-4 sm:px-6 lg:px-8 bg-stone-900 text-white scroll-mt-24">
