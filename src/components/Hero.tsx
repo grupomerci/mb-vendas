@@ -39,12 +39,7 @@ const Hero = () => {
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className="space-y-4 max-w-lg mx-auto lg:mx-0"
-            >
-              <p className="text-xl font-medium text-gray-800">
-                Você não precisa mais procurar roupas. <br />
-                Seu estilo chega até você.
-              </p>
-              
+            >           
               <p className="text-gray-600 leading-relaxed">
                 A <span className="font-bold text-gray-900">Minha Box</span> é uma experiência de moda personalizada criada para mulheres que querem se vestir bem sem perder tempo, sem errar e sem comprar por impulso.
               </p>
