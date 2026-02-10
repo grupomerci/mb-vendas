@@ -41,7 +41,7 @@ const Features = () => {
         <motion.div 
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0 },
             visible: {

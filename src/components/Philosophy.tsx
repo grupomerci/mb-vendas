@@ -11,7 +11,7 @@ const Philosophy = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="relative rounded-[2rem] p-12 md:p-12 text-center overflow-hidden shadow-2xl min-h-[500px] flex flex-col justify-center"
         >
@@ -29,7 +29,7 @@ const Philosophy = () => {
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="inline-flex items-center gap-2 border border-gold-500/30 rounded-full px-4 py-1.5 text-gold-500 text-xs font-bold tracking-widest uppercase"
                 >
@@ -40,7 +40,7 @@ const Philosophy = () => {
                <motion.h2 
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: false }}
+                 viewport={{ once: true }}
                  transition={{ duration: 0.6, delay: 0.3 }}
                  className="text-3xl md:text-5xl text-white text-center font-serif leading-tight"
                >
@@ -51,7 +51,7 @@ const Philosophy = () => {
                 <motion.div 
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                   variants={{
                     hidden: { opacity: 0 },
                     visible: {
@@ -85,7 +85,7 @@ const Philosophy = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
                   <motion.button 

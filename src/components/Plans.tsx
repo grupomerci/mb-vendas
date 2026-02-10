@@ -11,7 +11,7 @@ const Plans = () => {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -25,7 +25,7 @@ const Plans = () => {
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 relative"
           >
@@ -76,7 +76,7 @@ const Plans = () => {
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-stone-900 rounded-3xl p-8 md:p-12 shadow-2xl relative text-white transform md:-translate-y-4"
           >

@@ -8,7 +8,7 @@ const Footer = () => {
         <motion.div 
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0 },
             visible: {
@@ -75,7 +75,7 @@ const Footer = () => {
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 text-center md:text-left"
         >

@@ -26,7 +26,7 @@ const ProblemSolution = () => {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16 lg:mb-20"
         >
@@ -42,7 +42,7 @@ const ProblemSolution = () => {
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-[#f9f9f9] rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center min-h-[500px]"
           >
@@ -71,7 +71,7 @@ const ProblemSolution = () => {
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="relative rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center text-white overflow-hidden min-h-[500px]"
           >
