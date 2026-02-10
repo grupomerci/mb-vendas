@@ -12,8 +12,7 @@ const Hero = () => {
           <div className="space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 bg-black text-gold-500 px-4 py-1.5 rounded-full text-xs font-regular uppercase tracking-wider"
             >
@@ -23,8 +22,7 @@ const Hero = () => {
 
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-5xl lg:text-6xl font-serif text-stone-900"
             >
@@ -35,8 +33,7 @@ const Hero = () => {
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className="space-y-4 max-w-lg mx-auto lg:mx-0"
             >           
@@ -47,8 +44,7 @@ const Hero = () => {
 
             <motion.button 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -60,8 +56,7 @@ const Hero = () => {
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-100 w-full"
             >
@@ -90,8 +85,7 @@ const Hero = () => {
             {/* Main large image (right) */}
             <motion.div 
               initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="hidden lg:block absolute top-0 right-0 w-[70%] h-[55%] bg-gray-100 rounded-2xl overflow-hidden shadow-lg z-0"
             >
@@ -105,8 +99,7 @@ const Hero = () => {
             {/* Floating card (left-center) */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9, y: 50 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="relative lg:absolute lg:top-1/4 lg:-left-4 w-full max-w-sm lg:w-[55%] aspect-[4/3] rounded-2xl p-1 shadow-2xl z-20 rotate-0 lg:-rotate-2 transform hover:rotate-0 transition-transform duration-500"
             >
@@ -122,8 +115,7 @@ const Hero = () => {
             {/* Bottom image (bottom-right) */}
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               className="hidden lg:block absolute bottom-8 right-8 w-[60%] h-[45%] bg-gray-100 rounded-2xl overflow-hidden shadow-md z-10 border-4 border-white"
             >
