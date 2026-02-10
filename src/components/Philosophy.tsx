@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Philosophy = () => {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#f5f2eb]">
+    <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
