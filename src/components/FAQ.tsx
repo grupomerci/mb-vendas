@@ -38,7 +38,7 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 tracking-widest uppercase">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 tracking-widest uppercase">
             PERGUNTAS QUE VOCÊ ESTÁ SE FAZENDO
           </h2>
         </motion.div>

@@ -47,10 +47,10 @@ const ProblemSolution = () => {
             className="bg-[#f9f9f9] rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center"
           >
             <div className="mb-8">
-                <span className="text-xs font-bold tracking-widest text-red-400 uppercase mb-2 block">
+                <span className="text-xs font-bold tracking-widest text-red-400 uppercase mb-2 block text-center md:text-left">
                     O Cenário Comum
                 </span>
-                <h3 className="text-2xl font-serif text-[#1c1917]">
+                <h3 className="text-2xl md:text-3xl font-serif text-[#1c1917] text-center md:text-left">
                     O ciclo da frustração
                 </h3>
             </div>
@@ -59,7 +59,7 @@ const ProblemSolution = () => {
               {problems.map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <XCircle className="text-red-300 w-6 h-6 flex-shrink-0 mt-0.5" strokeWidth={1.5} />
-                  <p className="text-gray-600 font-light text-lg leading-relaxed">
+                  <p className="text-gray-600 font-light text-md md:text-lg leading-relaxed">
                     {item}
                   </p>
                 </div>
@@ -80,21 +80,21 @@ const ProblemSolution = () => {
 
             <div className="relative z-10">
                 <div className="mb-8">
-                    <span className="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2 block">
+                    <span className="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2 block text-center md:text-left">
                         A Experiência Minha Box
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-serif text-white leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-serif text-white leading-tight text-center md:text-left">
                         Uma curadoria que <span className="italic text-gold-500">pensa</span> por você
                     </h3>
                 </div>
 
-                <p className="text-gray-300 text-lg leading-relaxed mb-10 border-l-2 border-gold-500/30 pl-6">
+                <p className="text-gray-300 text=mdmd:text-lg leading-relaxed mb-8 border-l-2 border-gold-500/30 pl-6">
                     Nós não enviamos apenas roupas. Entregamos confiança, tempo livre e a certeza de estar bem vestida.
                 </p>
 
                 <div className="space-y-4 mb-10">
                     {solutionPoints.map((point, i) => (
-                        <div key={i} className="flex items-center gap-3">
+                        <div key={i} className="flex items-center gap-3 justify-center md:justify-start">
                              <CheckCircle2 className="text-gold-500 w-5 h-5" />
                              <span className="text-gray-200 font-medium">{point}</span>
                         </div>

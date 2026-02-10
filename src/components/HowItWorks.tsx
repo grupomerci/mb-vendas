@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const HowItWorks = () => {
+  const navigate = useNavigate();
   const steps = [
     {
       number: "1",
@@ -68,7 +70,7 @@ const HowItWorks = () => {
 
         <div className="relative">
           {/* Connecting line (hidden on mobile, visible on lg) */}
-          <div className="hidden lg:block absolute top-[26px] left-[5%] w-[90%] h-[1px] bg-white/10 -z-0"></div>
+          <div className="hidden lg:block absolute top-[26px] left-[8.33%] w-[83.33%] h-[1px] bg-white/10 -z-0"></div>
           
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-4 relative z-10"
@@ -108,6 +110,7 @@ const HowItWorks = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => navigate('/analise-cobertura')}
               className="bg-[#dcb13c] text-black px-12 py-4 rounded-full text-xs font-bold tracking-[0.2em] hover:bg-[#cda22b] transition-colors uppercase cursor-pointer"
             >
             Quero criar minha conta!

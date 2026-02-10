@@ -85,7 +85,7 @@ const Plans = () => {
               <span className="text-lg">♔</span> MAIS ESCOLHIDO
             </div>
 
-            <h3 className="font-serif text-3xl font-bold text-white mb-2 mt-4">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-2 mt-4">
               Assinatura Minha Box
             </h3>
             <p className="text-gray-400 mb-8">

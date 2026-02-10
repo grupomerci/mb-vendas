@@ -26,7 +26,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="beneficios" className="py-24 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-100">
+    <section id="beneficios" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         
         {/* Header with Quote */}
@@ -61,19 +61,19 @@ const Benefits = () => {
               }
             }
           }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 pt-12 border-t border-gray-100"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 pt-12 text-center"
         >
            <motion.div 
              variants={{
                hidden: { opacity: 0, y: 20 },
                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
              }}
-             className="flex flex-col justify-center"
+             className="flex flex-col justify-center items-center"
            >
               <span className="text-xs font-bold tracking-widest text-gold-600 uppercase mb-4">
                 O QUE VOCÊ RECEBE
               </span>
-              <h3 className="text-3xl font-serif text-[#1c1917] mb-4">
+              <h3 className="text-2xl md:text-3xl font-serif text-[#1c1917] mb-4">
                 Muito mais que roupas.
               </h3>
               <p className="text-gray-500 font-light leading-relaxed">
@@ -88,15 +88,15 @@ const Benefits = () => {
                  hidden: { opacity: 0, y: 20 },
                  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                }}
-               className="group"
+               className="group flex flex-col items-center"
              >
-                <span className="text-2xl font-bold text-gold-500 mb-2 block group-hover:text-gold-500 transition-colors">
+                <span className="text-xl font-bold text-gold-500 mb-2 block group-hover:text-gold-500 transition-colors border border-black/10 rounded-full h-12 w-12 flex items-center justify-center">
                   0{index + 1}
                 </span>
                 <h4 className="text-xl font-serif font-bold text-[#1c1917] mb-3 group-hover:translate-x-1 transition-transform">
                   {item.title}
                 </h4>
-                <p className="text-gray-500 text-sm leading-relaxed border-l-2 border-gray-100 pl-4 group-hover:border-gold-200 transition-colors">
+                <p className="text-gray-500 text-sm leading-relaxed max-w-xs mx-auto">
                   {item.desc}
                 </p>
              </motion.div>

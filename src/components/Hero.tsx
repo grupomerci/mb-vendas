@@ -6,10 +6,10 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-cream-50 via-white to-cream-100 overflow-hidden h-screen flex items-center">
+    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-cream-50 via-white to-cream-100 overflow-hidden min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-serif text-stone-900"
+              className="text-5xl lg:text-6xl font-serif text-stone-900"
             >
               Seu estilo pronto. <br />
               <span className="text-gold-500 italic">No seu tempo.</span> <br />
@@ -38,7 +38,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="space-y-4 max-w-lg"
+              className="space-y-4 max-w-lg mx-auto lg:mx-0"
             >
               <p className="text-xl font-medium text-gray-800">
                 Você não precisa mais procurar roupas. <br />
@@ -68,21 +68,21 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-100"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-100 w-full"
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <div className="text-gold-500 flex-shrink-0">
                   <CheckCircle size={18} />
                 </div>
                 <span className="text-xs text-gray-600 font-medium">Peças escolhidas por especialistas</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <div className="text-gold-500 flex-shrink-0">
                   <CheckCircle size={18} />
                 </div>
                 <span className="text-xs text-gray-600 font-medium">Looks pensados para sua rotina real</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <div className="text-gold-500 flex-shrink-0">
                   <CheckCircle size={18} />
                 </div>
@@ -91,7 +91,7 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          <div className="relative h-full min-h-[500px] lg:min-h-[600px] flex items-center justify-center lg:block">
+          <div className="relative h-full min-h-[300px] lg:min-h-[600px] flex items-center justify-center lg:block">
             {/* Main large image (right) */}
             <motion.div 
               initial={{ opacity: 0, x: 50 }}
