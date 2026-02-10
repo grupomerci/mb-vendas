@@ -10,10 +10,17 @@ const Philosophy = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.6 }}
-          className="bg-[#1e1b18] rounded-[2rem] p-12 md:p-12 text-center relative overflow-hidden shadow-2xl"
+          className="relative rounded-[2rem] p-12 md:p-12 text-center overflow-hidden shadow-2xl min-h-[500px] flex flex-col justify-center"
         >
-            {/* Background Glow Effect */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-gold-500/10 to-transparent pointer-events-none"></div>
+            {/* Background Image & Overlay */}
+            <div className="absolute inset-0 z-0">
+               <img 
+                 src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Mulher elegante" 
+                 className="w-full h-full object-cover"
+               />
+               <div className="absolute inset-0 bg-[#1e1b18]/90"></div>
+            </div>
 
             <div className="relative z-10 space-y-10">
                 <motion.div 
@@ -32,11 +39,12 @@ const Philosophy = () => {
                  whileInView={{ opacity: 1, y: 0 }}
                  viewport={{ once: false }}
                  transition={{ duration: 0.6, delay: 0.3 }}
-                 className="text-3xl md:text-5xl text-white text-center"
+                 className="text-3xl md:text-5xl text-white text-center font-serif leading-tight"
                >
-  A Minha Box existe porque<br />
-  mulheres estão cansadas de:
-</motion.h2>
+                  A Minha Box existe porque<br />
+                  mulheres estão cansadas de:
+                </motion.h2>
+
                 <motion.div 
                   initial="hidden"
                   whileInView="visible"
@@ -64,26 +72,13 @@ const Philosophy = () => {
                           hidden: { opacity: 0, y: 10 },
                           visible: { opacity: 1, y: 0 }
                         }}
-                        className="bg-white/10 text-gray-300 px-6 py-2 rounded-full text-sm font-medium border border-white/5 backdrop-blur-sm"
+                        className="bg-white/10 text-gray-200 px-6 py-2 rounded-full text-sm font-medium border border-white/5 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-default"
                       >
                           {text}
                       </motion.span>
                     ))}
                 </motion.div>
 
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  className="pt-6 border-t border-white/10 max-w-lg mx-auto"
-                >
-                    <p className="font-serif text-xl text-gray-200">
-                        "Aqui, estilo não é moda passageira. <br />
-                        É pertencimento. É praticidade. <br />
-                        <span className="text-gold-500 font-bold">É se sentir bem sem precisar pensar."</span>
-                    </p>
-                </motion.div>
             </div>
         </motion.div>
       </div>

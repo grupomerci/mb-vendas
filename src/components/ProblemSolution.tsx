@@ -19,7 +19,7 @@ const ProblemSolution = () => {
   ];
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-14 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -38,13 +38,13 @@ const ProblemSolution = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           
-          {/* Left: The Problem (Gray Card) */}
+          {/* Left: The Problem */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}
-            className="bg-[#f9f9f9] rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center"
+            className="bg-[#f9f9f9] rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center min-h-[500px]"
           >
             <div className="mb-8">
                 <span className="text-xs font-bold tracking-widest text-red-400 uppercase mb-2 block text-center md:text-left">
@@ -56,27 +56,34 @@ const ProblemSolution = () => {
             </div>
             
             <div className="space-y-6">
-              {problems.map((item, index) => (
+            {problems.map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <XCircle className="text-red-300 w-6 h-6 flex-shrink-0 mt-0.5" strokeWidth={1.5} />
-                  <p className="text-gray-600 font-light text-md md:text-lg leading-relaxed">
+                <XCircle className="text-red-400 w-6 h-6 flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+                <p className="text-gray-600 font-light text-md md:text-lg leading-relaxed">
                     {item}
-                  </p>
+                </p>
                 </div>
-              ))}
+            ))}
             </div>
           </motion.div>
 
-          {/* Right: The Solution (Dark/Gold Card) */}
+          {/* Right: The Solution */}
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}
-            className="bg-stone-900 rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center text-white relative overflow-hidden"
+            className="relative rounded-[2rem] p-10 lg:p-14 flex flex-col justify-center text-white overflow-hidden min-h-[500px]"
           >
-             {/* Background Subtle Gradient */}
-            <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
+             {/* Background Image & Overlay */}
+             <div className="absolute inset-0 z-0">
+                <img 
+                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" 
+                    alt="Closet organizado e elegante" 
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-stone-900/85"></div>
+            </div>
 
             <div className="relative z-10">
                 <div className="mb-8">
@@ -88,7 +95,7 @@ const ProblemSolution = () => {
                     </h3>
                 </div>
 
-                <p className="text-gray-300 text=mdmd:text-lg leading-relaxed mb-8 border-l-2 border-gold-500/30 pl-6">
+                <p className="text-gray-200 text-md md:text-lg leading-relaxed mb-8 border-l-2 border-gold-500/50 pl-6">
                     Nós não enviamos apenas roupas. Entregamos confiança, tempo livre e a certeza de estar bem vestida.
                 </p>
 
@@ -96,7 +103,7 @@ const ProblemSolution = () => {
                     {solutionPoints.map((point, i) => (
                         <div key={i} className="flex items-center gap-3 justify-center md:justify-start">
                              <CheckCircle2 className="text-gold-500 w-5 h-5" />
-                             <span className="text-gray-200 font-medium">{point}</span>
+                             <span className="text-white font-medium">{point}</span>
                         </div>
                     ))}
                 </div>
@@ -105,7 +112,7 @@ const ProblemSolution = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => navigate('/analise-cobertura')}
-                  className="w-full sm:w-auto bg-white text-[#1c1917] px-8 py-4 rounded-full text-xs font-bold tracking-widest transition-all duration-300 uppercase flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full sm:w-auto bg-white text-[#1c1917] px-8 py-4 rounded-full text-xs font-bold tracking-widest transition-all duration-300 uppercase flex items-center justify-center gap-2 cursor-pointer hover:bg-gold-50"
                 >
                     Começar minha transformação
                     <ArrowRight size={14} />
