@@ -1,31 +1,37 @@
-import { User, ShieldCheck, RefreshCcw, Armchair } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { ClipboardList, UserCheck, Map, Shirt, Armchair, Heart } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
-      Icon: User,
-      title: "Para quem não quer escolher",
-      subtitle: "Consultoria de verdade",
-      description: "Você não recebe roupas. Você recebe uma decisão pronta."
+      Icon: ClipboardList,
+      title: "Seu Perfil",
+      description: "Você conta quem você é, como vive e o que espera do seu estilo."
     },
     {
-      Icon: ShieldCheck,
-      title: "Zero Risco",
-      subtitle: "Prove antes de pagar",
-      description: "Você só paga pelo que decidir ficar. O que não amar, a gente recolhe."
+      Icon: UserCheck,
+      title: "Sua Curadora",
+      description: "Uma especialista analisa seu perfil e começa a desenhar sua identidade visual."
     },
     {
-      Icon: RefreshCcw,
-      title: "Consumo Inteligente",
-      subtitle: "Guarda-roupa funcional",
-      description: "Menos compras erradas. Mais roupas que se repetem no dia a dia."
+      Icon: Map,
+      title: "Mapa de Estilo",
+      description: "Vocês alinham referências, objetivos e preferências."
+    },
+    {
+      Icon: Shirt,
+      title: "Sua Seleção",
+      description: "Criamos combinações que funcionam entre si e com você."
     },
     {
       Icon: Armchair,
-      title: "Conforto Total",
-      subtitle: "Sem filas, sem stress",
-      description: "Entrega e retirada no seu endereço. Sem custo extra."
+      title: "O Ritual",
+      description: "Você prova tudo com calma, no seu tempo."
+    },
+    {
+      Icon: Heart,
+      title: "O que fica",
+      description: "Você paga apenas pelo que amar. O resto, a gente busca."
     }
   ];
 
@@ -45,7 +51,7 @@ const Features = () => {
               }
             }
           }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-center"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-center"
         >
           {features.map((feature, index) => (
             <motion.div 
@@ -60,12 +66,9 @@ const Features = () => {
                  <feature.Icon strokeWidth={1} size={32} />
               </div>
               
-              <h3 className="text-xl font-serif font-medium text-[#1c1917] mb-2">
+              <h3 className="text-xl font-serif font-medium text-[#1c1917] mb-4">
                 {feature.title}
               </h3>
-              <p className="text-[10px] font-bold tracking-widest text-gold-600 uppercase mb-4">
-                {feature.subtitle}
-              </p>
               <p className="text-sm text-gray-500 leading-relaxed max-w-[240px] mx-auto">
                 {feature.description}
               </p>

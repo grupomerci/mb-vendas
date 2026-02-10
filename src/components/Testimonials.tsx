@@ -64,7 +64,7 @@ const Testimonials = () => {
               }
             }
           }}
-          className="grid md:grid-cols-3 gap-8"
+          className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-8 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide"
         >
           {testimonials.map((testimonial) => (
             <motion.div 
@@ -73,7 +73,7 @@ const Testimonials = () => {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
               }}
-              className="bg-white p-8 rounded-2xl  border border-gray-200 duration-300 relative group"
+              className="bg-white p-8 rounded-2xl border border-gray-200 duration-300 relative group min-w-[85vw] md:min-w-0 snap-center"
             >
               <div className="absolute top-6 right-8 text-black/10 group-hover:text-gold-100 transition-colors">
                 <Quote className="w-10 h-10 rotate-180" strokeWidth={1.3} />

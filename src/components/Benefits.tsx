@@ -36,7 +36,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="galeria" className="py-10 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+    <section id="beneficios" className="py-10 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         
         {/* Header with Quote */}
